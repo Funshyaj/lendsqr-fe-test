@@ -57,12 +57,12 @@ const [switchClick, setSwitchClick] = useState(true)
     </button>
 
     <button href="">
-      <i className="fi fi-sr-money"></i>
+      <i className="fi fi-sr-piggy-bank"></i>
       Savings
     </button>
 
     <button href="">
-    <i className="fi fi-sr-piggy-bank"></i>
+    <i className="fi fi-sr-sack"></i>
       Loan Request
     </button>
 
@@ -88,7 +88,7 @@ const [switchClick, setSwitchClick] = useState(true)
     </button>
 
     <button href="">
-    <i className="fi fi-sr-salary"></i>
+    <i className="fi fi-sr-sack"></i>
       Loan Products
     </button>
 
@@ -108,17 +108,19 @@ const [switchClick, setSwitchClick] = useState(true)
     </button>
 
     <button href="">
-      <img src="" alt="" />
+    <i className="fi fi-sr-settings"></i>
       Services
     </button>
 
     <button href="">
-    <i className="fi fi-rr-user-settings"></i>
+    <span class="material-icons-outlined">
+manage_accounts
+</span>
       Service Account
     </button>
 
     <button href="">
-      <img src="" alt="" />
+    <i class="fi fi-sr-document"></i>
       Settlements
     </button>
 
@@ -144,7 +146,7 @@ const [switchClick, setSwitchClick] = useState(true)
     </button>
 
     <button href="">
-    <i className="fi fi-sr-clipboard list"></i>
+    <i class="fi fi-rr-clipboard-list"></i>
       Audit Logs
     </button>
 </div>
