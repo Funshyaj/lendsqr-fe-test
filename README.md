@@ -1,7 +1,7 @@
 # Project summary
 
 Here is the Link to the live page hosted on with github-pages
-[lendsqr-fe-test](funshyuaj.github.io/lendsqr-fe-test)
+[lendsqr-fe-test](funshyaj.github.io/lendsqr-fe-test)
 
 ### I would kindly oblige you to go through this documentation
 
