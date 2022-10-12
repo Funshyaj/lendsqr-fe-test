@@ -209,7 +209,7 @@ logout
  <div><i className="fi fi-rr-user"></i></div>
  <div className='name-heads'>
   <div className='name'>
-<h2>Grace Effiom</h2>
+<h2>{info.profile.firstName}{info.profile.lastName}</h2>
 <p>jnskdfksdjsk</p>
   </div>
   <div className='name'>
@@ -226,8 +226,8 @@ star_outline
 </div>
   </div>
   <div className='name'>
-<h2>N200,000.00</h2>
-<p>0066507258 / Access Bank</p>
+<h2>{info.accountBalance}</h2>
+<p>{info.accountNumber}</p>
   </div> 
   </div>   
   </div>
