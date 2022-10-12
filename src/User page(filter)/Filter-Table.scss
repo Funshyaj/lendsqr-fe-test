@@ -1,0 +1,92 @@
+  /**Declaring cross browser box-shadow mixin **/
+  @mixin box-shadow($top, $left, $blur, $size, $color) {
+    -webkit-box-shadow: $top $left $blur $size $color;
+    -moz-box-shadow: $top $left $blur $size $color;
+    box-shadow: $top $left $blur $size $color;}
+
+
+
+table{background: white;
+    padding: 20px;
+    margin: 30px 10px 10px;
+    width: 100%;
+    border-radius: 4px;
+    @include box-shadow(3px, 0px, 20px, 0px, rgb(0 0 0 / 9%));
+thead{
+    tr{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 30px 10px 0px;
+    }
+
+    th{
+        display: flex;
+        align-items: center;
+        gap:5px;
+        font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 14px;
+    }
+}
+
+    tbody{
+border-bottom:1px solid rgba(33, 63, 125, 0.1);
+        padding-bottom: 5px;
+
+        tr{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0px 20px;
+            border-bottom: 1px solid lightgray;
+            align-items: center;
+        }
+    
+        td{
+            display: flex;
+            margin-right: 5px;
+            font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 16px;
+flex-grow: 1;
+        }
+
+       /* td:nth-child(1){min-width: 150px;}
+        td:nth-child(2){width: 130px;}
+        td:nth-child(3){width: 230px;}
+        td:nth-child(4){width: 160px;}
+        td:nth-child(5){width: 200px;}
+        td:nth-child(6){width: 100px;}
+*/
+       
+.more-button{
+    position: relative;
+
+    .more-options{
+    display: flex;
+    position: absolute;
+    right: 38%;
+    bottom: 30px;
+    width: 170px;
+    padding: 15px;
+    background: white;
+    flex-direction: column;
+    @include box-shadow(3px, 0px, 20px, 0px, rgb(0 0 0 / 9%));
+    
+div{display: flex;}
+}
+    .more-options.hidden{
+        display: none;
+    }
+}
+
+}
+
+
+}
+
+
+@media (min-width: 768px) {
+    table{margin: 30px 0px 10px;}
+    }

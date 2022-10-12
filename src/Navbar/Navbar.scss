@@ -1,0 +1,440 @@
+   /**Declaring main color variables **/
+   $green: #39CDCC;
+   $blue:#213F7D;
+   $fadedeblue: #545F7D;
+
+
+  /**Declaring cross browser box-shadow mixin **/
+  @mixin box-shadow($top, $left, $blur, $size, $color) {
+   -webkit-box-shadow: $top $left $blur $size $color;
+   -moz-box-shadow: $top $left $blur $size $color;
+   box-shadow: $top $left $blur $size $color;}
+
+   @import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+   @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+header{
+    background-color: white;
+    padding: 10px ;
+    color: $blue;
+}
+
+
+
+.navbar{    z-index: 5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+     @include box-shadow(3px, 0px, 20px, 0px, rgb(0 0 0 / 9%));
+}
+
+.logo{
+    width: 100%;
+        img{
+            width: 120px;
+        }
+    }
+
+.header-body{
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+   .pc-head{
+    display: none;
+   }
+
+   .mobile-head{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-right: 5px;
+
+.notification{
+    display: flex;
+    flex-direction: column;
+    
+    img{width: 25px;}
+    }
+
+
+.profile{
+display: flex;
+align-items: center;
+
+.ppName{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center   ;
+
+img{
+    width: 28px;
+    height: 30px;
+    border-radius: 50%;}
+p{
+    font-size: 12px;
+    color: $blue;
+}
+}
+
+}
+
+
+
+}
+
+  /** hamburger bar **/
+  .hamburger-menu{
+
+   .bar{
+height: 2px;
+width: 25px;
+background-color: $blue;
+margin: 5px auto;
+transition: .5s;
+  }         
+  }
+
+  .mobile-menu{
+position: fixed;
+top: 0;
+left: 0;
+bottom: 0;
+animation: slide .6s;
+
+  
+    @keyframes slide {
+        from {left: -500px;}
+        to {left: 0px;}
+      }
+
+.side-click{
+position: fixed;
+top:0;
+right:0;
+bottom: 0;
+width: 100%;
+background-color: #0000006e;
+z-index: -1;
+}
+
+.mobileNavMenu{
+    background-color: white;
+    height: 100%;
+    width: 320px;
+    overflow-y: scroll;
+    
+  
+
+.cancel-btn{
+    font-size: 30px;
+    padding: 0px 20px 20px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-content{gap: 20px;
+    display: flex;
+    flex-direction: column;
+
+    i{
+        color: #213f7d69;
+    }
+
+.search{
+    display: flex;
+    color: white;
+    padding-left: 5px;
+ input{
+padding: 12px 20px;
+width: 80%;
+font-size: 20px;
+border: 1px solid lightgray;
+border-radius:10px 0px 0px 10px ;
+}   
+button{
+    padding: 10px 12px;
+    border: none;
+    background-color: $green;
+    border-radius:0px 10px 10px 0px ;
+}
+
+}
+
+
+a{
+    text-decoration: none;
+    color:#213F7D;
+}
+.docs{
+    display: block;
+padding: 10px 0px;
+font-size:20px ;
+    text-align: left;
+    padding-left: 20px;
+    color: #213F7D;
+}
+
+.switch-click{
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    padding-bottom: 20px;
+    gap: 10px;
+
+    i{
+        color: #21407dc7;
+    }
+
+    h3{
+        font-weight: 500;
+    font-size: 20px;
+    }
+}
+
+.org-content.hidden{
+    display: none;}
+
+.org-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .dash{
+        padding-left: 20px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        h3{
+            font-weight: 500;
+        font-size: 20px;
+        color: $fadedeblue;
+        
+        }
+    }
+
+    .link-menu{
+        flex-direction: column;
+        display: flex;
+        gap: 20px;
+        padding: 10px 0px;
+
+        h3{color:#545F7D;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            padding-left: 20px;
+            line-height: 14px;}
+
+        .links{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            button{
+                padding:10px 0px 7px 20px;
+                font-weight: 400;
+                color: #213f7dba;
+font-size: 16px;
+line-height: 19px;
+    gap: 10px;
+    display: flex;
+            }
+
+            .users{
+                background: #39cdcc29;
+                border-left: 5px solid $green;
+                color: $blue;
+        
+
+            }
+        }
+    }
+}
+
+}
+}
+
+.logout{
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    padding-bottom: 20px;
+    gap: 10px;
+
+    h3{
+           font-weight: 500; 
+    }
+
+}
+ 
+
+}
+
+
+/** Tablet screen **/
+@media (min-width: 768px) {
+
+    .logo{
+        width: 30%;
+            img{
+                width: 80%;
+            }
+        }
+nav{
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+}
+
+.mobile-head {
+    gap: 60px;
+
+.profile{
+    flex-direction: row;
+    gap: 10px;
+}}
+
+    .hamburger-menu .bar {
+        height: 2px;
+        width: 30px;
+    }
+
+  .mobile-menu{
+    .mobileNavMenu{
+        width: 520px;}
+  }  
+
+
+    .search{
+    display: flex;
+    color: white;
+ input{
+padding: 9px 20px;
+font-size: 20px;
+border: 1px solid lightgray;
+border-radius:10px 0px 0px 10px ;
+}   
+button{
+    padding: 10px 12px;
+    border: none;
+    background-color: $green;
+    border-radius:0px 10px 10px 0px ;
+
+}
+}
+
+.docs{
+    text-decoration: none;
+    font-size: 20px;
+    color: $blue;
+
+}
+}
+
+/**Pc screen **/
+@media (min-width: 1024px) {
+
+    .header-body{
+ .logo{width: 20%;
+    img{width: 60%;}}       
+    }
+ 
+
+    header {
+    padding: 20px 10px;}
+
+    .header-body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
+
+   .hamburger-menu{
+            display: none;
+        }
+
+        .mobile-head {
+            gap: 40px;
+            
+            .profile{
+                display: flex;
+                align-items: center;
+                
+                .ppName{
+                    display: flex;
+                    flex-direction: row;
+                img{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;}
+                p{
+                    font-size: 12px;
+                    color: $blue;
+                }
+                }
+                
+                }
+        
+            .notification{
+                img{
+                    width: 22px;
+            
+                }}
+        }
+        
+.pc-head{
+    display: flex;
+    align-items: center;
+    gap: 140px;
+
+.search{
+    display: flex;
+    color: white;
+    
+input{width: 80%;}
+
+input[type=search]:focus {
+    border: 1px solid lightgrey;
+    outline-style: none;
+  }
+
+
+button{
+    padding: 10px 12px;
+    border: none;
+    background-color: $green;
+    border-radius:0px 10px 10px 0px ;
+}
+}
+
+.docs{
+    text-decoration: underline;  
+}
+
+button{
+    border: none;
+    background: none;
+ 
+}
+}
+
+    
+
+nav {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;}
+
+
+
+}
+
+
+button{
+    border: none;
+    background: none;
+}

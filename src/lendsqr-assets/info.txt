@@ -1,0 +1,19 @@
+font:font-family: Avenir Next;
+font-size: 20px;
+font-weight: 400;
+line-height: 27px;
+letter-spacing: 0em;
+text-align: left;
+color: #213F7D;
+
+
+
+Login buton
+color: #39CDCC;
+font-family: Avenir Next;
+font-size: 12px;
+font-weight: 600;
+line-height: 16px;
+letter-spacing: 0.1em;
+text-align: right;
+

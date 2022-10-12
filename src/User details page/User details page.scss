@@ -1,0 +1,347 @@
+
+
+
+    /**Declaring main color variables **/
+    $green: #39CDCC;
+    $blue:#213F7D;
+    $fadedeblue: #545F7D;
+
+    
+
+   /**Declaring cross browser box-shadow mixin **/
+   @mixin box-shadow($top, $left, $blur, $size, $color) {
+    -webkit-box-shadow: $top $left $blur $size $color;
+    -moz-box-shadow: $top $left $blur $size $color;
+    box-shadow: $top $left $blur $size $color;
+ }
+
+ 
+.side-nav{display: none;}
+
+.main-body{
+
+.details-head-nav{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    gap: 30px;
+
+    a{text-decoration: none;
+    color: $fadedeblue;}
+    .back-btn{
+        display: flex;
+        align-items: center;
+        gap:10px;
+            justify-content: flex-start;
+}
+
+    div{
+        display: flex;
+        justify-content: space-between;
+    
+.buttons{
+display: flex;
+gap: 10px;
+
+
+button{font-weight: 600;
+font-size: 12px;
+line-height: 16px;
+text-align: center;
+letter-spacing: 0.1em;
+          border-radius: 8px;
+        padding: 10px;  
+        transition: .5s;
+        cursor: pointer;
+}
+    button:nth-child(1){
+        color:#E4033B;
+        border: 1px solid #E4033B;
+    }
+
+    button:nth-child(1):hover{
+        background-color: #E4033B;
+        color: white;
+    }
+
+    
+    button:nth-child(1):active{
+        background-color: #E4033B;
+        color: white;
+    }
+
+
+    button:nth-child(2){
+        color: $green;
+        border: 1px solid $green;
+    }
+
+    button:nth-child(2):hover{
+        background-color: $green;
+        color: white;
+    }
+
+    
+    button:nth-child(2):active{
+        background-color: $green;
+        color: white;
+    }
+}}
+
+
+}
+
+.details-head{
+    @include box-shadow(3px, 0px, 20px, 0px, rgb(0 0 0 / 9%));
+    padding: 10px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+.details-head-info{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+
+    div{
+        display: flex;
+        align-items: center;
+
+        i{
+            background-color: #a4bbfc27;
+            border-radius: 50%;
+            padding: 10px 10px;
+    width: 124px;
+    height: 124px;
+    text-align: center;
+    font-size: 100px;
+        }
+    }
+.name-heads{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .name{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    .stars{color: gold;}
+    h2{
+        font-style: normal;
+font-size: 22px;
+line-height: 26px;
+    }
+    p{color: $fadedeblue;
+    font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;}
+    }
+}}
+
+.details-head-switch{
+    display: flex;
+    width: 100%;
+    padding: 20px 0px 0px;
+    justify-content: space-between;
+
+button{
+    padding: 0px 0px 10px;
+}
+button:active{
+    color: $green;
+    border-bottom: 1px solid
+}
+
+
+
+button:nth-child(1){
+   color: $green;
+    border-bottom: 1px solid;
+}
+}
+}
+
+.details-info-body{
+     @include box-shadow(3px, 0px, 20px, 0px, rgb(0 0 0 / 9%));
+    margin: 20px 0px 0px;
+    padding: 10px;
+
+    section{padding: 10px 0px; 
+    
+.section-info{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 0px;
+
+    .section-data{flex-grow: 1;
+    
+    p{font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;}
+
+        h3{font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;}
+    
+    }
+}
+    
+    }
+}
+
+}
+
+
+
+
+
+ /** Tablet screen **/
+ @media (min-width: 768px) {
+
+.main-body{
+    .details-head{
+    .details-head-info{
+    .name-heads{
+        display: flex;
+        align-items: center;
+    flex-direction: row;
+    gap: 40px;
+    padding-left:50px;
+.name:nth-child(1){
+    border-right: 1px solid lightgray;
+    padding-right: 40px;
+}
+.name:nth-child(2){
+    border-right: 1px solid lightgray;
+    padding-right: 40px;
+}
+}}
+
+.details-head-switch{
+    padding: 20px 20px 0px;
+ }    
+}
+}
+ }
+
+ /** pc screen **/
+ @media (min-width: 1024px) {
+    .side-nav{
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0px;
+        padding-top: 90px;
+        bottom: 0;
+        background-color: white;
+        overflow-y: scroll;
+        width:20%;
+        @include box-shadow(3px, 0px, 20px, 0px, rgb(0 0 0 / 9%));
+
+            
+
+        ::-webkit-scrollbar {
+            display:none
+          }
+
+        a{
+            text-decoration: none;
+            color:$blue;
+        }
+   
+        .switch-click{
+            display: flex;
+            align-items: center;
+            padding: 20px 0px 40px 16px;
+            gap: 10px;
+        
+            i{
+                color: #21407dc7;
+            }
+        
+            h3{
+                font-weight: 500;
+            font-size: 18px;
+            color: $blue;
+            }
+        }
+        
+        .org-content.hidden{
+            display: none;}
+        
+        .org-content{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        
+            .dash{
+                padding-left: 20px;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                h3{
+                    font-weight: 500;
+                font-size: 20px;
+                color: $fadedeblue;
+                }
+
+                i{
+                    color: #21407dc7;
+                }
+            
+            }
+        
+            .link-menu{
+                flex-direction: column;
+                display: flex;
+                gap: 20px;
+                padding: 10px 0px;
+        
+                h3{color:#545F7D;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 12px;
+                    padding-left: 20px;
+                    line-height: 14px;}
+        
+                .links{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+        
+                    button{
+                        padding:10px 0px 7px 20px;
+                        font-weight: 400;
+                        color: #213f7dba;
+        font-size: 16px;
+        line-height: 19px;
+            gap: 10px;
+            display: flex;
+                    }
+        
+                    .users{
+                        background: #39cdcc29;
+                        border-left: 5px solid $green;
+                        color: $blue;
+                
+        
+                    }
+                }
+                
+        }
+        }
+        
+
+
+
+
+}
+
+
+     }
+    

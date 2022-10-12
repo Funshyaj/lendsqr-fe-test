@@ -1,0 +1,12 @@
+*{
+font-family: myFontRegular;}
+
+@font-face {
+    font-family: 'myFontBold';
+    src: local('myFontBold'), url(./fonts/AvenirNextLTPro-Bold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'myFontRegular';
+    src: local('myFontRegualar'), url(./fonts/AvenirNextLTPro-Regular.otf) format('opentype');
+}

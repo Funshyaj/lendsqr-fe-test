@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+
+    /**Declaring main color variables **/
+$green: #39CDCC;
+$blue:#213F7D;
+
+   /**Declaring cross browser box-shadow mixin **/
+   @mixin box-shadow($top, $left, $blur, $size, $color) {
+    -webkit-box-shadow: $top $left $blur $size $color;
+    -moz-box-shadow: $top $left $blur $size $color;
+    box-shadow: $top $left $blur $size $color;
+ }
+
+
+
+.login-page{
+    background-color: white;
+}   
+
+
+.login-logo{
+ position: absolute;
+ top: 30px;
+ left: 20px;
+ z-index: 999;
+
+    img{
+   width: 35%;
+   height: auto;
+    }
+}
+
+.side-image{
+display: none;
+}
+
+.login-section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+.login-content{
+    padding: 0px 16px;
+    display: flex;
+    gap: 35px;
+    flex-direction: column;
+}
+
+.login-section-head-texts{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    h1{
+        font-size: 40px;
+        color: $blue;
+        font-weight: 700;
+        font-family: myFontBold;
+    }
+
+    p{color:#545F7D;
+        font-size: 20px;
+    }
+}
+
+}
+
+form{
+    height: 255px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:10px;
+
+.inputs{
+display: flex;
+justify-content: space-between;
+margin: 10px auto;
+flex-wrap: wrap;
+gap: 20px;
+
+input{
+flex-grow: 1;
+font-size: 1rem;
+padding: 15px;
+border-color: #545F7D26 ;
+border-radius: 5px;
+width: 100%;
+color:#545F7D;}
+
+::placeholder{
+    color:#545f7d62;
+}
+
+.password{
+    width: 100%;
+    position: relative;
+
+    p{
+    position: absolute;
+    right: 17px;
+    top: 38%;
+    }
+}
+
+
+}
+
+p{
+    display: flex;
+    justify-self: flex-start;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 0.1em;
+    color: $green;
+}
+
+
+
+button{
+    padding: 15px;
+    font-size: 1rem;
+    background-color: $green;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 7px;
+font-weight: 600;
+line-height: 16px;
+letter-spacing: 0.1em;
+text-align: center;
+}
+
+}
+
+/** Tablet screen **/
+@media (min-width: 768px) {
+  
+    .login-logo img {
+        width: 25%;
+    }
+
+    .side-image{
+        display: block;
+        width: 45%;
+        position: absolute;
+        left: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            width: 90%;
+        }
+        }
+
+
+    .login-section {
+        width: 55%;
+        position: absolute;
+        right: 0;
+        @include box-shadow(3px, 0px, 20px, 0px, rgb(0 0 0 / 9%));
+
+        .login-content{
+            padding: 0px 30px;
+        }
+        
+    
+    }
+}
+
+
+
+/** pc screen **/
+@media (min-width: 1024px) {
+
+    .login-logo img {
+        width: 15%;
+    }
+
+    .side-image{
+        width: 55%;}
+
+
+    .login-section {
+        width: 45%;
+        
+    .login-content{
+        padding: 0px 80px;
+        }
+    }
+}

@@ -1,0 +1,351 @@
+
+
+
+    /**Declaring main color variables **/
+    $green: #39CDCC;
+    $blue:#213F7D;
+    $fadedeblue: #545F7D;
+
+    
+
+   /**Declaring cross browser box-shadow mixin **/
+   @mixin box-shadow($top, $left, $blur, $size, $color) {
+    -webkit-box-shadow: $top $left $blur $size $color;
+    -moz-box-shadow: $top $left $blur $size $color;
+    box-shadow: $top $left $blur $size $color;
+ }
+
+ 
+.side-nav{display: none;}
+
+.UserPage{background: #e5e5e54a;}
+.FilterPage{background: #e5e5e54a;}
+.UserDetailsPage{background: #e5e5e54a;}
+
+.content-body {
+    color: #213F7D;}
+
+.main-body{
+   
+    color:$blue;
+    padding: 15px 0px;
+    padding-top: 85px;
+
+    h1{padding: 10px;}
+}
+
+.main-box{
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;}
+
+ /**Box styling **/
+.users-info-box{
+    @include box-shadow(3px, 0px, 20px, 0px, rgb(0 0 0 / 9%));
+    height: 100px;
+    display: flex;
+    padding: 20px;
+    gap: 60px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 4px;
+img{
+    width: 70px;
+}
+
+h3{
+    color: $fadedeblue;
+}
+h2{
+    color: $blue;
+}
+    }
+
+.info-box{
+    @include box-shadow(3px, 0px, 20px, 0px, rgb(0 0 0 / 9%));
+    width: 31%;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+
+img{
+    width: 50px;
+}
+
+h3{
+    color: $fadedeblue;
+    font-weight: 500;   
+    font-size: 12px;
+    line-height: 16px;
+}
+h2{
+    color: $blue;
+    font-size: 16px;
+}
+}
+
+.three-boxes{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+}
+
+.pc-main-box{display: none;}
+
+
+ /** Tablet screen **/
+ @media (min-width: 768px) {
+
+    .side-nav{
+        display: none;
+    }
+
+    .main-body{
+        color:$blue;
+        padding: 90px 10px 20px;
+
+        h1{padding: 20px 5px;
+        font-size: 24px;}
+
+    }
+
+     /**Box styling **/
+    .main-box{display: none;}
+
+
+
+.pc-main-box{
+    display: block;
+    .four-boxes{
+        display: flex;
+        gap:10px;
+        justify-content: space-between;
+    
+    .info-box{
+        @include box-shadow(3px, 5px, 20px, 0px, rgb(0 0 0 / 4%));
+        gap: 10px;   
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px 12px;
+        background-color: white;
+        width: 240px;
+        height: 180px;
+        border: 1px solid rgba(33, 63, 125, 0.06);
+        border-radius: 4px;
+    
+    img{
+        width: 50px;
+    }
+    
+    h3{
+        color: $fadedeblue;
+    }
+    h2{
+        color: $blue;
+    }
+    }}
+    
+    
+    
+         }}
+  
+
+ /** pc screen **/
+ @media (min-width: 1024px) {
+    .side-nav{
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0px;
+        padding-top: 90px;
+        bottom: 0;
+        background-color: white;
+        overflow-y: scroll;
+        width:20%;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+
+            
+
+        ::-webkit-scrollbar {
+            display:none
+          }
+
+        a{
+            text-decoration: none;
+            color:$blue;
+        }
+   
+        .switch-click{
+            display: flex;
+            align-items: center;
+            padding: 20px 0px 40px 16px;
+            gap: 10px;
+        
+            i{
+                color: #21407dc7;
+            }
+        
+            h3{
+                font-weight: 500;
+            font-size: 18px;
+            color: $blue;
+            }
+        }
+        
+        .org-content.hidden{
+            display: none;}
+        
+        .org-content{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        
+            .dash{
+                padding-left: 20px;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                h3{
+                    font-weight: 500;
+                font-size: 20px;
+                color: $fadedeblue;
+                }
+
+                i{
+                    color: #21407dc7;
+                }
+            
+            }
+        
+            .link-menu{
+                flex-direction: column;
+                display: flex;
+                gap: 20px;
+                padding: 10px 0px;
+        
+                h3{color:#545F7D;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 12px;
+                    padding-left: 20px;
+                    line-height: 14px;}
+        
+                .links{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+        
+                    button{
+                        padding:10px 0px 7px 20px;
+                        font-weight: 400;
+                        color: #213f7dba;
+        font-size: 16px;
+        line-height: 19px;
+            gap: 10px;
+            display: flex;
+                    }
+        
+                    .users{
+                        background: #39cdcc29;
+                        border-left: 5px solid $green;
+                        color: $blue;
+                
+        
+                    }
+                }
+                
+        }
+        }
+        
+
+.logout{
+    display: flex;
+    align-items: center;
+    padding: 20px 0px 40px 16px;
+    gap: 10px;
+    h3{
+        font-weight: 500;
+    }
+}
+
+
+}
+    .main-body{
+        color:$blue;
+        margin-left: 20%;
+        padding: 85px 10px 10px 30px;
+
+
+        h1{padding: 20px 5px;}
+
+    }
+
+    .main-box{
+display: none;
+    }
+
+     /**Box styling **/
+     .pc-main-box{
+.four-boxes{
+    display: flex;
+    gap:10px;
+    justify-content: space-between;
+
+.info-box{
+    @include box-shadow(3px, 5px, 20px, 0px, rgb(0 0 0 / 4%));
+    gap: 10px;   
+    display: flex;
+    flex-direction: column;
+    padding: 20px 12px;
+    background-color: white;
+    width: 240px;
+    height: 160px;
+    left: 343px;
+    top: 228px;
+    background: #FFFFFF;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    border-radius: 4px;
+
+img{
+    width: 50px;
+}
+
+h3{
+    color: $fadedeblue;
+    font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+
+}
+h2{
+    color: $blue;
+    font-family: myFontBold;    
+    font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+}
+}}
+
+
+
+     }
+
+.content-body{
+    color:$blue;
+    margin-left: 20%;
+    padding: 10px 10px 10px 30px;
+}
+
+}   
+
+
