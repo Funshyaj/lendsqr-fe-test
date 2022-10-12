@@ -1,10 +1,10 @@
 import { useState, } from 'react';
 import './dashboard.scss';
 import Navbar from "../Navbar/navbar";
-import users from "./dashboard-assets/users.png";
-import activeUsers from "./dashboard-assets/active-users.png";
-import usersLoans from "./dashboard-assets/users-loans.png";
-import usersSavings from "./dashboard-assets/users-savings.png";
+import users from "./dash-page-assets/users.png";
+import activeUsers from "./dash-page-assets/active-users.png";
+import usersLoans from "./dash-page-assets/users-loans.png";
+import usersSavings from "./dash-page-assets/users-savings.png";
 import { Link } from 'react-router-dom';
 
 

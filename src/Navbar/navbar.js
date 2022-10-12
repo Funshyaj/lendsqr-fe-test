@@ -1,8 +1,8 @@
 import { useState } from "react";
 import logo from "../lendsqr-assets/logo.png";
 
-import profilePic from "../Dashboard/dashboard-assets/profile-pic.png";
-import notificationIcon from "../Dashboard/dashboard-assets/bell.png";
+import profilePic from "../Dashboard/dash-page-assets/profile-pic.png";
+import notificationIcon from "../Dashboard/dash-page-assets/bell.png";
 import './Navbar.scss';
 import { Link } from "react-router-dom";
 
