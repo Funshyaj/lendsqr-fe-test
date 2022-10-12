@@ -7,9 +7,9 @@ Here is the Link to the live page hosted on with github-pages
 
 ## `Login Page`
 
-1.The login button takes you to the next page
-2.The show and hide button is fully functional
-2.The Page is completely responsive
+1. The login button takes you to the next page
+2. The show and hide button is fully functional
+2. The Page is completely responsive
 
 
 ## `Users Dashboard`
