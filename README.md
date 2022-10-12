@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Project summary
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Here is the Link to the live page hosted on with github-pages
+[Funsho-Ajayi-lendsqr-fe-test.github.com](https://funshyaj.github.io/lendsqr-fe-test/)
 
-## Available Scripts
+### I would kindly oblige you to go through this documentation
 
-In the project directory, you can run:
+## `Login Page`
 
-### `npm start`
+- The login button takes you to the next page
+- The show and hide button is fully functional
+- The Page is completely responsive on all devices
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## `Users Dashboard`
+This is made up of the Navbar component and Table which are imported and displayed
+This is fully responsive across all devices
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+**What i did for mobile design**
+- Designed a wireframe with my digital sketch pad where I ideated the design myself based on past experince
+- Scaled the design across all mobile devices but removing the search input from the head to the onclick mobile menu, hereby modeifying the mobile design
+- Changed the design of the boxes for design to become mobile friendly
+- Reduced the amount of data in the table mobile to avoid users scrolling the overflow on the **X axis** for a softer experience
+- Mobile User can use the more option to veiw the full details as well
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## `Users filter Dashboard`
+For this page I demonstrated the search filter form as if when pressed and the more options buttons likewise.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## `Users details Page`
+This page displays the full details of a debtor which I mapped one from the mock API given after it was saved in local storage from the previous page
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### `Concerns`
+- I wasnt sure if I was to add all the functionally, although i reached out to the HR to ask and confirm if that was necessary but i didnt get a tangible response so i only did  what the assestment required. Im sure if I get to join the team I can implement them quicly and easily.
+- For the navigations for the other pages I added a link button to display the remaining two pages as in the test Figma file becasue I was not sure how else to.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### `Additions`
+- So far the Ui design is very nice and neat andI beilve users will have a great experience on the web app
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### I fully understand the full functionalities of the web app and I can easily implement them when I join the team which are:
+- The user page displays info debtors under a paricular lender 
+- User can view full details by clicking the more button 
+- Page pagination functonality which can also be easily done
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**I am honored to have taken this test and I hope I am considered for this role, because I strongly beilieve I will be able to add immense value to this team and the organization**
+**Thank you for reading :+1:**
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
