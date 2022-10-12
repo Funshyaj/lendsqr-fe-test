@@ -206,10 +206,11 @@ logout
     <div key="1">
        <div className='details-head'>
 <div className='details-head-info'>
- <div><i className="fi fi-rr-user"></i></div>
+ <div>
+ <img src={info.profile.avatar} alt="dp" /></div>
  <div className='name-heads'>
   <div className='name'>
-<h2>{info.profile.firstName}{info.profile.lastName}</h2>
+<h2>{info.profile.firstName} {info.profile.lastName}</h2>
 <p>jnskdfksdjsk</p>
   </div>
   <div className='name'>
@@ -233,13 +234,27 @@ star_outline
   </div>
 
   <div className='details-head-switch'>
-<button>General Details</button>
-<button>General Details</button>
-<button>General Details</button>
-<button>General Details</button>
-<button>General Details</button>
-<button>General Details</button>
+    <div className='btn-pack'>
+      <button>General Details</button>
+<button>Documents</button>
+<button>Bank Details</button>
+    </div>
+<div className='btn-pack'>
+ <button>Loans</button>
+<button>Savings</button>
+<button>Apps and system</button> 
+</div>
+
   </div>
+
+  <div className='pc-details-head-switch'>
+      <button>General Details</button>
+<button>Documents</button>
+<button>Bank Details</button>
+ <button>Loans</button>
+<button>Savings</button>
+<button>Apps and system</button> 
+</div>
  
 
 
@@ -252,53 +267,169 @@ star_outline
   <div className='section-info'>
     <div className='section-data'>
 <p>FULL NAME</p>
-<h3>Grace Effiom</h3>
+<h3>{info.profile.firstName}{info.profile.lastName}</h3>
     </div>
 
     <div className='section-data'>
-<p>FULL NAME</p>
-<h3>Grace Effiom</h3>
+<p>EMAIL ADDRESS</p>
+<h3>{info.email}</h3>
     </div>
 
     <div className='section-data'>
-<p>FULL NAME</p>
-<h3>Grace Effiom</h3>
+<p>PHONE NUMBER</p>
+<h3>{info.profile.phoneNumber}</h3>
     </div>
 
     <div className='section-data'>
-<p>FULL NAME</p>
-<h3>Grace Effiom</h3>
+<p>BVN</p>
+<h3>{info.profile.bvn}</h3>
+    </div>
+
+    <div className='section-data'>
+<p>GENDER</p>
+<h3>{info.profile.gender}</h3>
+    </div>
+
+    <div className='section-data'>
+<p>MARITAL STATUS</p>
+<h3>Single</h3>
+    </div>
+
+    <div className='section-data'>
+<p>CHILDREN</p>
+<h3>None</h3>
+    </div>
+
+    <div className='section-data'>
+<p>TYPE OF RESIDENCE</p>
+<h3>Parents residence</h3>
     </div>
   </div>
 
 </section>
 
 <section>
-  <h2>Personal Information</h2>
+  <h2>Education and Employment</h2>
+
+  <div className='section-info'>
+    <div className='section-data'>
+<p>LEVEL OF EDUCATION</p>
+<h3>Grace Effiom</h3>
+    </div>
+
+    <div className='section-data'>
+<p>EMPLOYMENT STATUS</p>
+<h3>{info.education.employmentStatus}</h3>
+    </div>
+
+    <div className='section-data'>
+<p>SECTOR OF EMPLOYMMENT</p>
+<h3>{info.education.sector}</h3>
+    </div>
+
+    <div className='section-data'>
+<p>DURATION OF EMPLOYMENT</p>
+<h3>{info.education.duration}</h3>
+    </div>
+
+  <div className='section-data'>
+<p>OFFICE EMAIL</p>
+<h3>{info.education.officeEmail}</h3>
+    </div>
+
+    <div className='section-data'>
+<p>MONTHLY INCOME</p>
+<h3>{info.education.monthlyIncome[0]},{info.education.monthlyIncome[1]}</h3>
+    </div>
+
+    <div className='section-data'>
+<p>LOAN REPAYMENT</p>
+<h3>{info.education.loanRepayment}</h3>
+    </div>
+    </div>
+</section>
+
+<section>
+  <h2>Socials</h2>
+
+  <div className='section-info'>
+    <div className='section-data'>
+<p>TWITTER</p>
+<h3>{info.socials.twitter}</h3>
+    </div>
+
+    <div className='section-data'>
+<p>FACEBOOK</p>
+<h3>{info.socials.facebook}</h3>
+    </div>
+
+    <div className='section-data'>
+<p>INSTAGRAM</p>
+<h3>{info.socials.instagram}</h3>
+    </div>
+</div>
+
+</section>
+
+<section>
+  <h2>Guarantor</h2>
 
   <div className='section-info'>
     <div className='section-data'>
 <p>FULL NAME</p>
-<h3>Grace Effiom</h3>
+<h3>{info.guarantor.firstName} {info.guarantor.lastName}</h3>
     </div>
 
     <div className='section-data'>
-<p>FULL NAME</p>
-<h3>Grace Effiom</h3>
+<p>PHONE NUMBER</p>
+<h3>{info.guarantor.phoneNumber}</h3>
     </div>
 
     <div className='section-data'>
-<p>FULL NAME</p>
-<h3>Grace Effiom</h3>
+<p>EMAIL ADDRESS</p>
+<h3>{info.guarantor.address}</h3>
     </div>
 
     <div className='section-data'>
-<p>FULL NAME</p>
-<h3>Grace Effiom</h3>
+<p>RELATIONSHIP</p>
+<h3>Brother</h3>
     </div>
-  </div>
+
+
+<div className='section-data'>
+<p>GENDER</p>
+<h3>{info.guarantor.gender}</h3>
+    </div>
+</div>
+
 
 </section>
+
+<section>
+  <div className='section-info'>
+    <div className='section-data'>
+<p>FULL NAME</p>
+<h3>Debby Ogana</h3>
+    </div>
+
+    <div className='section-data'>
+<p>PHONE NUMBER</p>
+<h3>08078559693</h3>
+    </div>
+
+    <div className='section-data'>
+<p>EMAIL ADDRESS</p>
+<h3>{info.email}</h3>
+    </div>
+
+    <div className='section-data'>
+<p>RELATIONSHIP</p>
+<h3>Sister</h3>
+    </div>
+</div>
+
+</section>
+
 
 </div>
     </div>
