@@ -18,9 +18,12 @@
  
 .side-nav{display: none;}
 
-.UserPage{background: #e5e5e54a;}
-.FilterPage{background: #e5e5e54a;}
-.UserDetailsPage{background: #e5e5e54a;}
+.UserPage{background: #e5e5e54a;
+position: absolute;}
+.FilterPage{background: #e5e5e54a;
+position: absolute;}
+.UserDetailsPage{background: #e5e5e54a;
+position: absolute;}
 
 .content-body {
     color: #213F7D;}
@@ -31,7 +34,11 @@
     padding: 15px 0px;
     padding-top: 85px;
 
-    h1{padding: 10px;}
+    h1{padding: 10px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;}
 }
 
 .main-box{
@@ -59,6 +66,7 @@ img{
 
 h3{
     color: $fadedeblue;
+    
 }
 h2{
     color: $blue;

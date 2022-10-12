@@ -314,7 +314,7 @@ star_outline
   <div className='section-info'>
     <div className='section-data'>
 <p>LEVEL OF EDUCATION</p>
-<h3>Grace Effiom</h3>
+<h3>Bsc</h3>
     </div>
 
     <div className='section-data'>
