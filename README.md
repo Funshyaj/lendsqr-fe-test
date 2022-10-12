@@ -9,49 +9,47 @@ Here is the Link to the live page hosted on with github-pages
 
 - The login button takes you to the next page
 - The show and hide button is fully functional
-- The Page is completely responsive
+- The Page is completely responsive on all devices
 
 
 ## `Users Dashboard`
-This made up of the Navbar component and Table which are imported and displayed
-Fully responsive across all devices
+This is made up of the Navbar component and Table which are imported and displayed
+This is fully responsive across all devices
 
 
 
 **What i did for mobile design**
-- designed a wireframe with mu digital sketch pad where i ideated the design myself based on past experince
-- scaled the design across all mobile devices but removing the search input from the head ti the onclick menu, hereby changing the design
-- Change the design of the boxes for design to become mobile friendly
-- reduced the amount of data in the table mobile to avoid users scrolling the over flow for a softer experience
-- mobile User can use the more option to veiw the full details as well
+- Designed a wireframe with my digital sketch pad where I ideated the design myself based on past experince
+- Scaled the design across all mobile devices but removing the search input from the head to the onclick mobile menu, hereby modeifying the mobile design
+- Changed the design of the boxes for design to become mobile friendly
+- Reduced the amount of data in the table mobile to avoid users scrolling the overflow on the **X axis** for a softer experience
+- Mobile User can use the more option to veiw the full details as well
 
 
 ## `Users filter Dashboard`
-For this page i demonstrated the search filter form as if when pressed and the more options buttons likewise
+For this page I demonstrated the search filter form as if when pressed and the more options buttons likewise.
 
 
 
 ## `Users details Page`
-This page displays the ful detsils of a debtor which i mapped from the mock api given after it was saved in local storage from the previous page
-
+This page displays the full details of a debtor which I mapped one from the mock API given after it was saved in local storage from the previous page
 
 
 
 #### `Concerns`
-- I wasnt sure if i was to add all the functionally , although i reached out to the HR to ask and confirm but i didnt get a tangible response
-- Im sure if i get to join the team i can implement them quicly and easily
-- For the navigations for the other pages i added a link button to display the remaining two pages as in the test Figma file
+- I wasnt sure if I was to add all the functionally, although i reached out to the HR to ask and confirm if that was necessary but i didnt get a tangible response so i only did  what the assestment required. Im sure if I get to join the team I can implement them quicly and easily.
+- For the navigations for the other pages I added a link button to display the remaining two pages as in the test Figma file becasue I was not sure how else to.
 
 
 #### `Additions`
-- So far the Ui design very nice and neat and i beilve users will have a great experience on the web app
+- So far the Ui design is very nice and neat andI beilve users will have a great experience on the web app
 
-#### I fully understand the full functionalities of the web app and i can easily implement them when i join the team which are:
+#### I fully understand the full functionalities of the web app and I can easily implement them when I join the team which are:
 - The user page displays info debtors under a paricular lender 
 - User can view full details by clicking the more button 
 - Page pagination functonality which can also be easily done
 
 
-**I am honored to have taken this test and i hope i am considered for this role i beilieve i would be able to add immense value to this team and the organozation**
-**Thank you**
+**I am honored to have taken this test and I hope I am considered for this role, because I strongly beilieve I will be able to add immense value to this team and the organization**
+**Thank you for reading :+1:**
 
