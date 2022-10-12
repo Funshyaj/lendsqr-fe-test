@@ -277,6 +277,37 @@ more_vert
     }
 
     </tbody>
+    <div className='table-bottom-nav'>
+  <div>
+    <p>Showing</p>
+    <select name="" id="">
+        <option value="">100</option>
+        <option value="">99</option>
+        <option value="">98</option>
+    </select>
+    <p className='out-of-text'>out of 100</p>
+    
+</div>      
+
+<div>
+<button>
+<span class="material-icons-outlined">
+arrow_back_ios
+</span>
+</button>
+<p>1</p>
+<p>2</p>
+<p>3</p>
+<p>...</p>
+<p>15</p>
+<p>16</p>
+<button>
+<span class="material-icons-outlined">
+arrow_forward_ios
+</span>
+</button>
+</div>
+    </div>
     </table>
     </div>      }
 

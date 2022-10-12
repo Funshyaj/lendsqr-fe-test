@@ -8,11 +8,6 @@ const [donePending, setDonePending] = useState(false)
 const [currentpage, setCurrentpage] = useState(1);
 const [infoPerPage, setInfoPerPage] = useState(9);
 
-/*    let getdb = () => {
-  fetch('https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users')
-  .then((response) => response.json())
-  .then((data) => data.forEach(element => db.push(element)))
-} */
 
 useEffect( () => {
 const fetchData = async () =>{
@@ -93,7 +88,42 @@ more_vert
     }
 
     </tbody>
+
+    <div className='table-bottom-nav'>
+  <div>
+    <p>Showing</p>
+    <select name="" id="">
+        <option value="">100</option>
+        <option value="">99</option>
+        <option value="">98</option>
+    </select>
+    <p className='out-of-text'>out of 100</p>
+    
+</div>      
+
+<div>
+<button>
+<span class="material-icons-outlined">
+arrow_back_ios
+</span>
+</button>
+<p>1</p>
+<p>2</p>
+<p>3</p>
+<p>...</p>
+<p>15</p>
+<p>16</p>
+<button>
+<span class="material-icons-outlined">
+arrow_forward_ios
+</span>
+</button>
+</div>
+    </div>
     </table>
+
+
+
     </div>      }
 
     {donePending && 
@@ -157,6 +187,37 @@ more_vert
     }
 
     </tbody>
+    <div className='table-bottom-nav'>
+  <div>
+    <p>Showing</p>
+    <select name="" id="">
+        <option value="">100</option>
+        <option value="">99</option>
+        <option value="">98</option>
+    </select>
+    <p className='out-of-text'>out of 100</p>
+    
+</div>      
+
+<div>
+<button>
+<span class="material-icons-outlined">
+arrow_back_ios
+</span>
+</button>
+<p>1</p>
+<p>2</p>
+<p>3</p>
+<p>...</p>
+<p>15</p>
+<p>16</p>
+<button>
+<span class="material-icons-outlined">
+arrow_forward_ios
+</span>
+</button>
+</div>
+    </div>
     </table>
     </div>      }
 
@@ -227,6 +288,37 @@ more_vert
     }
 
     </tbody>
+    <div className='table-bottom-nav'>
+  <div>
+    <p>Showing</p>
+    <select name="" id="">
+        <option value="">100</option>
+        <option value="">99</option>
+        <option value="">98</option>
+    </select>
+    <p className='out-of-text'>out of 100</p>
+    
+</div>      
+
+<div>
+<button>
+<span class="material-icons-outlined">
+arrow_back_ios
+</span>
+</button>
+<p>1</p>
+<p>2</p>
+<p>3</p>
+<p>...</p>
+<p>15</p>
+<p>16</p>
+<button>
+<span class="material-icons-outlined">
+arrow_forward_ios
+</span>
+</button>
+</div>
+    </div>
     </table>
     </div>      }
 

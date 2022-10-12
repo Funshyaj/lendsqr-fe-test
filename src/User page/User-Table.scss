@@ -15,6 +15,8 @@
     position: relative;
 }
 
+
+
 .pc-table-container{
     display: none;
 }
@@ -79,7 +81,32 @@ flex-grow: 1;}
      }
 
         }
+        .table-bottom-nav{
+            width: 100%;
+            display: flex;
+            padding: 20px 2px 0px;
+            justify-content: space-between;
+        
+            div{
+                display: flex;
+                gap:10px;
+                color: $fadedeblue;
+                align-items: center;
 
+            .out-of-text{display: none;}
+                select{background: rgba(33, 63, 125, 0.1);
+                    border-radius: 4px;
+                color: $blue;}
+
+                button{
+background: rgba(33, 63, 125, 0.1);
+border-radius: 4px;
+padding: 5px;
+                    span{color: $blue;
+                    font-size: 16px;}
+                }
+            }
+        }
 
 }
 
@@ -250,12 +277,18 @@ color: white;
                     
                  }
             
-                    }
+     .table-bottom-nav{
+        
+            div{
+    .out-of-text{display:inline;}
+                    
+                }
             
             
-
+            }
     
     }
+}
     
 
     @media (min-width: 1024px) {
